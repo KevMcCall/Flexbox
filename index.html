@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog</title>
+    <style>
+        header {
+            text-align: center;
+        }
+
+        .flexbox-container {
+
+            display: flex;
+            justify-content: space-around;
+            align-content: space-between;
+
+        }
+
+        .flexbox-item {
+            border: 3px solid #333;
+            background-color: #dfdfdf;
+            align-self: center;
+        }
+
+        .flexone {
+            height: 500px;
+            width: 600px;
+
+        }
+
+        .flextwo {
+            flex-shrink: 5;
+            align-self: flex-start;
+        }
+
+        .flexthree {
+            align-self: flex-end;
+            flex-grow: 5;
+            flex-basis: 10px;
+        }
+
+
+
+        .flexbox-secondcontainer {
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap-reverse;
+            text-align: center;
+
+        }
+
+        .flexfour {
+            height: 500px;
+            width: 600px;
+            align-self: flex-start;
+
+        }
+
+        .flexfive {
+            align-self: flex-end;
+
+        }
+
+        .flexsix {
+            
+
+        }
+
+        .flexseven {
+            align-self: 
+
+        }
+
+        .flexeight {
+            align-self: c
+
+        }
+
+        .flexnine {
+            align-self: 
+
+        }
+
+        .flexten {
+            align-self: 
+
+        }
+
+        .footer {
+            
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <!--create an h1 "Travel Blog-->
+    <!--Create an H2 with a quote that represents your dream country destination.-->
+    <!--create a flexbox container-->
+    <!--Nest 3 flexbox items-->
+    <header>
+        <h1>Travel Blog</h1>
+        <h2>"Nana korobi ya oki (Fall seven times, rise eight).”</h2>
+    </header>
+    <div class="flexbox-container">
+
+        <div class="flexbox-item flexone">
+            <!--Image of Country-->
+            <img src="images/featured_85.jpg" alt="japanquote" height="500" width="600">
+        </div>
+
+        <div class="flexbox-item flextwo">
+            <!--Paragraph about Country-->
+            <p>Japan – the “Land of the Rising sun” – is an archipelago of more than 6,800 islands in the Pacific Ocean.
+                The main islands are, from North to South: Hokkaido, Honshu, Shikoku, Kyushu, which make up for 97% of
+                the land of Japan. Its population is more than 126 millions inhabitants. Japan is the 3rd largest
+                economy in the world, based on GDP.
+
+                Japan’s climate is temperate, though it is worth noticing that there are wide discrepancies between
+                North and South, from Hokkaido to Kyushu, as Japan extends about 3,000 km of latitude.</p>
+        </div>
+
+        <div class="flexbox-item flexthree">
+            <!--Add an aside with a link about your country-->
+            <aside><a href="https://www.japan.go.jp/japan/">About Japan</a></aside>
+        </div>
+
+    </div>
+    </div>
+
+    <!--Second Container-->
+    <h2>"Italy is a dream that keeps returning for the rest of your life.”</h2>
+    </header>
+    <div class="flexbox-secondcontainer">
+
+        <div class="flexbox-item flexfour">
+            <!--Image of Country-->
+            <img src="images/Italy.jpg" alt="Italy" height="500" width="600">
+        </div>
+
+        <div class="flexbox-item flexfive">
+            <!--Paragraph about Country-->
+            <p>Italy, a European country with a long Mediterranean coastline, has left a powerful mark on Western
+                culture and cuisine. Its capital, Rome, is home to the Vatican as well as landmark art and ancient
+                ruins. Other major cities include Florence, with Renaissance masterpieces such as Michelangelo’s "David"
+                and Brunelleschi's Duomo; Venice, the city of canals; and Milan, Italy’s fashion capital.</p>
+        </div>
+
+        <div class="flexbox-item flexsix">
+            <!--Add an aside with a link about your country-->
+            <aside><a href="https://www.nationsonline.org/oneworld/italy.htm">About Italy</a></aside>
+        </div>
+
+    </div>
+    </div>
+    <!--End Second Container-->
+
+
+
+    <!--Start third container-->
+    <!--Only include 2 items-->
+    <!-- Embed A Video-->
+    <div class="flexbox-thirdcontainer">
+
+        <div class="flexbox-item flexseven">
+            <!--Video of Japan-->
+            <video width="320" height="240" controls>
+                <source src="https://www.youtube.com/watch?v=00ZXaXIABMY" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="flexbox-item flexeight">
+            <!--Video Of Italy-->
+            <video width="320" height="240" controls>
+                <source src="https://www.youtube.com/watch?v=FlRwssZYRM0&t=10s" type="video/mp4">
+            </video>
+        </div>
+        <!--End Third Container-->
+
+
+        <!--Start Fourth Container-->
+        <div class="flexbox-thirdcontainer">
+
+            <div class="flexbox-item flexnine">
+                <!--Content Here-->
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi culpa, aliquid laborum libero
+                    voluptate veniam sequi quam excepturi adipisci distinctio, vero labore sapiente deserunt cupiditate
+                    repudiandae obcaecati accusantium reprehenderit eligendi.</p>
+            </div>
+
+            <div class="flexbox-item flexten">
+                <!--Content Here-->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem laborum corporis veniam quidem
+                    deserunt iure adipisci explicabo sed inventore, sequi perferendis ad est tempora quasi, dolore,
+                    optio qui quis? Maiores.</p>
+            </div>
+            <!--End Fourth Container-->
+
+            <!--Add a footer that stays at the bottom of the page and stretches 100% of the width-->
+            <footer>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil optio tempora numquam blanditiis enim
+                    accusantium quos nulla cumque at quisquam dolores quibusdam ducimus necessitatibus pariatur, esse
+                    nobis saepe unde similique!</p>
+            </footer>
+</body>
+
+</html>
