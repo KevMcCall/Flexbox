@@ -10,24 +10,59 @@
             text-align: center;
         }
 
-        .flexbox-container {
+        body {
+            color: #000000;
+            background-image: url("images/travel-background.jpg");
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
 
+        h1 {
+            text-decoration: underline;
+        }
+
+        h2 {
+            text-align: center;
+        }
+        /*Japan Container*/
+        .flexbox-container {
+            justify-content: flex-end;
             display: flex;
             justify-content: space-around;
             align-content: space-between;
+            flex-direction: column;
+        }
+
+        /*Italy Container*/
+        .flexbox-secondcontainer {
+            display: flex;
+            text-align: center;
+            flex-direction: column-reverse;
+        }
+        /*Embedded Videos*/
+        .flexbox-thirdcontainer {
+            margin-top: 15px;
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            
 
         }
 
+        /*For ALL Flexbox Items*/
         .flexbox-item {
-            border: 3px solid #333;
-            background-color: #dfdfdf;
             align-self: center;
+            
         }
 
+        /*Start Japan Items*/
         .flexone {
+            
             height: 500px;
             width: 600px;
-
+            align-self: center;
+            border: 3px solid red;
         }
 
         .flextwo {
@@ -39,42 +74,54 @@
             align-self: flex-end;
             flex-grow: 5;
             flex-basis: 10px;
-        }
+            align-self: center;
+        /*End Japan Items*/
 
-
-
-        .flexbox-secondcontainer {
-            display: flex;
-            flex-direction: row-reverse;
-            flex-wrap: wrap-reverse;
-            text-align: center;
 
         }
-
+        /*Start Italy Items*/
         .flexfour {
             height: 500px;
             width: 600px;
-            align-self: flex-start;
+            align-self: center;
+            border: 3px solid red;
 
         }
 
         .flexfive {
             align-self: flex-end;
+            margin-top: 10px;
+            margin-bottom: 10px;
 
         }
+        
+        .flexsix {
+            align-self: center;
+        }
+        /*End Italy Items*/
 
-        .flexsix {}
+        /*Embedded Video Items Start*/
+        .flexseven {
+            margin-right: 15px;
+            height: 240px;
+            width: 320px;
+            border: 3px solid red;
+        }
 
-        .flexseven {}
-
-        .flexeight {}
+        .flexeight {
+            margin-left: 15px;
+            height: 240px;
+            width: 320px;
+            border: 3px solid red;
+        }
+        /*Embedded Video Items End*/
 
         .flexnine {}
 
         .flexten {}
 
         footer {
-            position: fixed;
+            position: sticky;
             left: 0;
             bottom: 0;
             width: 100%;
@@ -128,7 +175,7 @@
 
     <!--Second Container-->
     <h2>"Italy is a dream that keeps returning for the rest of your life.”</h2>
-    </header>
+    
     <div class="flexbox-secondcontainer">
 
         <div class="flexbox-item flexfour">
@@ -177,7 +224,7 @@
 
 
         <!--Start Fourth Container-->
-        <div class="flexbox-thirdcontainer">
+        <div class="flexbox-fourthcontainer">
 
             <div class="flexbox-item flexnine">
                 <!--Content Here-->
@@ -196,9 +243,12 @@
 
             <!--Add a footer that stays at the bottom of the page and stretches 100% of the width-->
             <footer>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil optio tempora numquam blanditiis enim
-                    accusantium quos nulla cumque at quisquam dolores quibusdam ducimus necessitatibus pariatur, esse
-                    nobis saepe unde similique!</p>
+                <p>Copyright © 2020 The Travel Company</p>
+	        <p>
+		    <a href="#">About</a> -
+		    <a href="#">Privacy Policy</a> -
+		    <a href="#">Contact Us</a>
+	        </p>
             </footer>
 </body>
 
